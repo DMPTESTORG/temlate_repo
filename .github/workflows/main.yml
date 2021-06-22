@@ -4,7 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: sed "s/ABC1/1CBA/g"
+      - run: sed "s/ABC1/1CBA/g" test.txt
       - run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
