@@ -3,5 +3,11 @@ description: "composit test"
 runs:
   using: "composite"
   steps:
+    - name: Install nodejs
+      uses: actions/setup-node@v1
+
+    - name: check version
+      run: node --version
+      shell: bash
     - run: echo from action.yml
       shell: bash
