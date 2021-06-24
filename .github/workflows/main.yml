@@ -11,4 +11,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "main.yml"
       - uses: .github/workflows/composite.yml
+        with:
+          who-to-greet: "test"
       - run: echo "🍏 This job's status is ${{ job.status }}."
