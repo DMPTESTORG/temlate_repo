@@ -1,11 +1,5 @@
 name: Composite
-
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-
+description: "composit test"
 runs:
   using: "composite"
   steps:
