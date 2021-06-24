@@ -5,10 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+      - uses: ./.github/workflows/composite
       - run: sed "s/ABC1/1CBA/g" test.txt
       - run: |
           ls ${{ github.workspace }}
       - run: echo "main.yml"
-      - uses: ./.github/workflows/composite
       - run: echo "🍏 This job's status is ${{ job.status }}."
