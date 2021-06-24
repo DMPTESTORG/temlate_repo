@@ -1,0 +1,6 @@
+name: Composite
+runs:
+  using: "composite"
+  steps:
+    - run: echo from composite.yml
+      shell: bash
